@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox
+from multi_drive_copy_utility import MultiDriveCopyUtility  # Import the class
 
 class DataOrganizationApp:
     def __init__(self, master):
@@ -24,7 +25,17 @@ class DataOrganizationApp:
             widget.destroy()
 
     def field_copy(self):
-        messagebox.showinfo("Info", "Field Copy Sensor USB drives functionality not implemented yet.")
+        # Create a new top-level window
+        field_copy_window = tk.Toplevel(self.master)
+        field_copy_window.title("Field Copy Sensor USB drives")
+        
+        # Create an instance of MultiDriveCopyUtility in the new window
+        MultiDriveCopyUtility(field_copy_window)
+        
+        # Optional: Wait for this window to be closed before allowing interaction with the main window
+        field_copy_window.transient(self.master)
+        field_copy_window.grab_set()
+        self.master.wait_window(field_copy_window)
 
     def office_copy(self):
         messagebox.showinfo("Info", "Office Copy Secondary Drive functionality not implemented yet.")

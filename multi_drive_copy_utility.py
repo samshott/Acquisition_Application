@@ -9,9 +9,7 @@ import threading
 import time
 import logging
 
-# Add this at the beginning of your script, after the imports
-logging.basicConfig(filename='copy_log.txt', level=logging.DEBUG, 
-                    format='%(asctime)s - %(levelname)s - %(message)s')
+
 
 class MultiDriveCopyUtility:
     def __init__(self, master):
@@ -24,6 +22,10 @@ class MultiDriveCopyUtility:
 
         self.cancel_flag = False
         self.create_widgets()
+        
+        # Add this at the beginning of your script, after the imports
+        logging.basicConfig(filename='copy_log.txt', level=logging.DEBUG, 
+                    format='%(asctime)s - %(levelname)s - %(message)s')
 
     def create_widgets(self):
         # Drive selection
@@ -378,7 +380,9 @@ class MultiDriveCopyUtility:
             for dir in dirs:
                 os.rmdir(os.path.join(root, dir))
 
-if __name__ == "__main__":
-    root = tk.Tk()
-    app = MultiDriveCopyUtility(root)
-    root.mainloop()
+    def run(self):
+        self.master.mainloop()
+# if __name__ == "__main__":
+#     root = tk.Tk()
+#     app = MultiDriveCopyUtility(root)
+#     root.mainloop()

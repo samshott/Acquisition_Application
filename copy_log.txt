@@ -36,3 +36,6 @@
 2024-09-24 15:41:12,579 - ERROR - Error copying file /Volumes/UUI/.Trashes/501/uui/ldlinux.sys: [Errno 1] Operation not permitted: '/Users/samuelericksen/Documents/Personal/Projects/LiDAR_Project/Test_Dest/Altum/.Trashes/501/uui/ldlinux.sys'
 2024-09-24 15:41:12,591 - INFO - Completed copying Altum. Stats: {'total_files': 1811, 'copied_files': 1810, 'total_size': 2389102158, 'copied_size': 2389064270}
 2024-09-24 15:41:12,596 - INFO - Copy process completed. Total copied: 11.15 GB
+2024-09-24 15:46:11,455 - INFO - Drive /Volumes/1tb size: 368.53 GB
+2024-09-24 15:46:12,034 - INFO - Drive /Volumes/UUI size: 2.23 GB
+2024-09-24 15:46:12,035 - INFO - Total size to copy: 370.75 GB
