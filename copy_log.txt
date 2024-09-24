@@ -1,0 +1,38 @@
+2024-09-24 15:32:41,784 - INFO - Drive /Volumes/NO NAME size: 13.18 GB
+2024-09-24 15:32:42,292 - INFO - Drive /Volumes/UUI size: 2.23 GB
+2024-09-24 15:32:42,292 - INFO - Total size to copy: 15.41 GB
+2024-09-24 15:32:44,698 - ERROR - Error copying file /Volumes/NO NAME/DCIM/DCIMA/LOCA0708.avi: [Errno 1] Operation not permitted: '/Users/samuelericksen/Documents/Personal/Projects/LiDAR_Project/Test_Dest/LiDAR/DCIM/DCIMA/LOCA0708.avi'
+2024-09-24 15:32:46,906 - ERROR - Error copying file /Volumes/NO NAME/DCIM/DCIMA/LOCA0133.avi: [Errno 1] Operation not permitted: '/Users/samuelericksen/Documents/Personal/Projects/LiDAR_Project/Test_Dest/LiDAR/DCIM/DCIMA/LOCA0133.avi'
+2024-09-24 15:32:49,113 - ERROR - Error copying file /Volumes/NO NAME/DCIM/DCIMA/LOCA0901.avi: [Errno 1] Operation not permitted: '/Users/samuelericksen/Documents/Personal/Projects/LiDAR_Project/Test_Dest/LiDAR/DCIM/DCIMA/LOCA0901.avi'
+2024-09-24 15:32:55,632 - ERROR - Error copying file /Volumes/NO NAME/DCIM/DCIMA/LOCA1479.avi: [Errno 1] Operation not permitted: '/Users/samuelericksen/Documents/Personal/Projects/LiDAR_Project/Test_Dest/LiDAR/DCIM/DCIMA/LOCA1479.avi'
+2024-09-24 15:32:55,714 - ERROR - Error copying file /Volumes/NO NAME/DCIM/DCIMA/LOCA4737.avi: [Errno 1] Operation not permitted: '/Users/samuelericksen/Documents/Personal/Projects/LiDAR_Project/Test_Dest/LiDAR/DCIM/DCIMA/LOCA4737.avi'
+2024-09-24 15:32:55,902 - ERROR - Error copying file /Volumes/NO NAME/DCIM/DCIMA/LOCA1480.avi: [Errno 1] Operation not permitted: '/Users/samuelericksen/Documents/Personal/Projects/LiDAR_Project/Test_Dest/LiDAR/DCIM/DCIMA/LOCA1480.avi'
+2024-09-24 15:33:06,141 - ERROR - Error copying file /Volumes/NO NAME/DCIM/DCIMB/LOCB0115.avi: [Errno 1] Operation not permitted: '/Users/samuelericksen/Documents/Personal/Projects/LiDAR_Project/Test_Dest/LiDAR/DCIM/DCIMB/LOCB0115.avi'
+2024-09-24 15:33:06,217 - ERROR - Error copying file /Volumes/NO NAME/DCIM/DCIMB/LOCB0126.avi: [Errno 1] Operation not permitted: '/Users/samuelericksen/Documents/Personal/Projects/LiDAR_Project/Test_Dest/LiDAR/DCIM/DCIMB/LOCB0126.avi'
+2024-09-24 15:33:06,292 - ERROR - Error copying file /Volumes/NO NAME/DCIM/DCIMB/LOCB0901.avi: [Errno 1] Operation not permitted: '/Users/samuelericksen/Documents/Personal/Projects/LiDAR_Project/Test_Dest/LiDAR/DCIM/DCIMB/LOCB0901.avi'
+2024-09-24 15:33:08,399 - ERROR - Error copying file /Volumes/NO NAME/DCIM/DCIMB/LOCB4737.avi: [Errno 1] Operation not permitted: '/Users/samuelericksen/Documents/Personal/Projects/LiDAR_Project/Test_Dest/LiDAR/DCIM/DCIMB/LOCB4737.avi'
+2024-09-24 15:33:09,483 - ERROR - Error copying file /Volumes/NO NAME/DCIM/DCIMB/LOCB1479.avi: [Errno 1] Operation not permitted: '/Users/samuelericksen/Documents/Personal/Projects/LiDAR_Project/Test_Dest/LiDAR/DCIM/DCIMB/LOCB1479.avi'
+2024-09-24 15:33:09,551 - ERROR - Error copying file /Volumes/NO NAME/DCIM/DCIMB/LOCB1480.avi: [Errno 1] Operation not permitted: '/Users/samuelericksen/Documents/Personal/Projects/LiDAR_Project/Test_Dest/LiDAR/DCIM/DCIMB/LOCB1480.avi'
+2024-09-24 15:33:10,642 - ERROR - Error copying file /Volumes/NO NAME/DCIM/DCIMB/LOCB0708.avi: [Errno 1] Operation not permitted: '/Users/samuelericksen/Documents/Personal/Projects/LiDAR_Project/Test_Dest/LiDAR/DCIM/DCIMB/LOCB0708.avi'
+2024-09-24 15:33:10,723 - ERROR - Error copying file /Volumes/NO NAME/DCIM/DCIMB/LOCB0133.avi: [Errno 1] Operation not permitted: '/Users/samuelericksen/Documents/Personal/Projects/LiDAR_Project/Test_Dest/LiDAR/DCIM/DCIMB/LOCB0133.avi'
+2024-09-24 15:33:33,779 - INFO - Completed copying LiDAR. Stats: {'total_files': 64, 'copied_files': 50, 'total_size': 14153646098, 'copied_size': 8087633938}
+2024-09-24 15:35:01,907 - ERROR - Error copying file /Volumes/UUI/.Trashes/501/uui/ldlinux.sys: [Errno 1] Operation not permitted: '/Users/samuelericksen/Documents/Personal/Projects/LiDAR_Project/Test_Dest/Altum/.Trashes/501/uui/ldlinux.sys'
+2024-09-24 15:35:01,913 - INFO - Completed copying Altum. Stats: {'total_files': 1811, 'copied_files': 1810, 'total_size': 2389102158, 'copied_size': 2389064270}
+2024-09-24 15:35:01,914 - INFO - Copy process completed. Total copied: 9.76 GB
+2024-09-24 15:37:53,828 - INFO - Drive /Volumes/NO NAME size: 13.18 GB
+2024-09-24 15:37:53,997 - INFO - Drive /Volumes/UUI size: 2.23 GB
+2024-09-24 15:37:53,997 - INFO - Total size to copy: 15.41 GB
+2024-09-24 15:38:54,117 - ERROR - Error copying file /Volumes/NO NAME/.Trashes/501/LOCA0133.avi: [Errno 1] Operation not permitted: '/Users/samuelericksen/Documents/Personal/Projects/LiDAR_Project/Test_Dest/LiDAR/.Trashes/501/LOCA0133.avi'
+2024-09-24 15:39:06,049 - ERROR - Error copying file /Volumes/NO NAME/.Trashes/501/LOCA1479.avi: [Errno 1] Operation not permitted: '/Users/samuelericksen/Documents/Personal/Projects/LiDAR_Project/Test_Dest/LiDAR/.Trashes/501/LOCA1479.avi'
+2024-09-24 15:39:14,593 - ERROR - Error copying file /Volumes/NO NAME/.Trashes/501/LOCA0901.avi: [Errno 1] Operation not permitted: '/Users/samuelericksen/Documents/Personal/Projects/LiDAR_Project/Test_Dest/LiDAR/.Trashes/501/LOCA0901.avi'
+2024-09-24 15:39:23,157 - ERROR - Error copying file /Volumes/NO NAME/.Trashes/501/LOCA1480.avi: [Errno 1] Operation not permitted: '/Users/samuelericksen/Documents/Personal/Projects/LiDAR_Project/Test_Dest/LiDAR/.Trashes/501/LOCA1480.avi'
+2024-09-24 15:39:25,821 - ERROR - Error copying file /Volumes/NO NAME/.Trashes/501/LOCB4737.avi: [Errno 1] Operation not permitted: '/Users/samuelericksen/Documents/Personal/Projects/LiDAR_Project/Test_Dest/LiDAR/.Trashes/501/LOCB4737.avi'
+2024-09-24 15:39:31,929 - ERROR - Error copying file /Volumes/NO NAME/.Trashes/501/LOCB1479.avi: [Errno 1] Operation not permitted: '/Users/samuelericksen/Documents/Personal/Projects/LiDAR_Project/Test_Dest/LiDAR/.Trashes/501/LOCB1479.avi'
+2024-09-24 15:39:38,016 - ERROR - Error copying file /Volumes/NO NAME/.Trashes/501/LOCB0708.avi: [Errno 1] Operation not permitted: '/Users/samuelericksen/Documents/Personal/Projects/LiDAR_Project/Test_Dest/LiDAR/.Trashes/501/LOCB0708.avi'
+2024-09-24 15:39:40,589 - ERROR - Error copying file /Volumes/NO NAME/.Trashes/501/LOCB0133.avi: [Errno 1] Operation not permitted: '/Users/samuelericksen/Documents/Personal/Projects/LiDAR_Project/Test_Dest/LiDAR/.Trashes/501/LOCB0133.avi'
+2024-09-24 15:39:43,173 - ERROR - Error copying file /Volumes/NO NAME/.Trashes/501/LOCB0126.avi: [Errno 1] Operation not permitted: '/Users/samuelericksen/Documents/Personal/Projects/LiDAR_Project/Test_Dest/LiDAR/.Trashes/501/LOCB0126.avi'
+2024-09-24 15:39:45,743 - ERROR - Error copying file /Volumes/NO NAME/.Trashes/501/LOCB0115.avi: [Errno 1] Operation not permitted: '/Users/samuelericksen/Documents/Personal/Projects/LiDAR_Project/Test_Dest/LiDAR/.Trashes/501/LOCB0115.avi'
+2024-09-24 15:39:45,744 - INFO - Completed copying LiDAR. Stats: {'total_files': 65, 'copied_files': 55, 'total_size': 14153650194, 'copied_size': 9587101714}
+2024-09-24 15:41:12,579 - ERROR - Error copying file /Volumes/UUI/.Trashes/501/uui/ldlinux.sys: [Errno 1] Operation not permitted: '/Users/samuelericksen/Documents/Personal/Projects/LiDAR_Project/Test_Dest/Altum/.Trashes/501/uui/ldlinux.sys'
+2024-09-24 15:41:12,591 - INFO - Completed copying Altum. Stats: {'total_files': 1811, 'copied_files': 1810, 'total_size': 2389102158, 'copied_size': 2389064270}
+2024-09-24 15:41:12,596 - INFO - Copy process completed. Total copied: 11.15 GB
