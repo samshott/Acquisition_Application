@@ -8,7 +8,7 @@ import hashlib
 import threading
 import time
 import logging
-
+import utils.band_splitter as band_splitter
 
 
 class MultiDriveCopyUtility:
@@ -26,7 +26,10 @@ class MultiDriveCopyUtility:
         # Add this at the beginning of your script, after the imports
         logging.basicConfig(filename='copy_log.txt', level=logging.DEBUG, 
                     format='%(asctime)s - %(levelname)s - %(message)s')
-
+        
+        self.split_bands_var = tk.BooleanVar(value=True)  # Default to checked
+        self.split_bands_checkbox = None  # We'll create this later
+        
     def create_widgets(self):
         # Drive selection
         tk.Label(self.master, text="Select Drives:").grid(row=0, column=0, padx=10, pady=10, sticky="w")
@@ -94,7 +97,23 @@ class MultiDriveCopyUtility:
         self.master.grid_columnconfigure(1, weight=1)
 
         self.update_drive_list()
-
+        
+        self.altum_var.trace("w", self.toggle_split_bands_checkbox)
+    
+    def toggle_split_bands_checkbox(self, *args):
+        if self.altum_var.get():
+            if not self.split_bands_checkbox:
+                self.split_bands_checkbox = tk.Checkbutton(
+                    self.master, 
+                    text="Copy Band 1 into separate folder for processing?", 
+                    variable=self.split_bands_var
+                )
+                self.split_bands_checkbox.grid(row=2, column=2, padx=10, pady=5, sticky="w")
+        else:
+            if self.split_bands_checkbox:
+                self.split_bands_checkbox.grid_remove()
+                
+    
     def update_drive_list(self):
         drives = self.get_removable_drives()
         for dropdown in [self.lidar_dropdown, self.altum_dropdown, self.sony_dropdown]:
@@ -298,6 +317,18 @@ class MultiDriveCopyUtility:
             self.update_status("Copy process completed.")
             self.update_progress(100, "Copy process completed", "", f"Total copied: {self.format_size(copied_size)}")
             logging.info(f"Copy process completed. Total copied: {self.format_size(copied_size)}")
+            
+            # Run band_splitter if checkbox is checked and Altum drive was copied
+            if self.split_bands_var.get() and source_drives.get("Altum"):
+                altum_dest = os.path.join(destination, "Altum")
+                if os.path.exists(altum_dest):
+                    self.update_status("Running band splitter...")
+                    try:
+                        band_splitter.main(altum_dest)
+                        self.update_status("Band splitting completed.")
+                    except Exception as e:
+                        self.update_status(f"Error during band splitting: {str(e)}")
+                        logging.error(f"Error during band splitting: {str(e)}")
             
             # Show statistics and ask about emptying drives
             self.master.after(0, lambda: self.show_statistics_and_empty_drives(statistics, source_drives))
