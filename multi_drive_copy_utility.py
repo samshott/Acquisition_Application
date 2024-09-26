@@ -9,6 +9,7 @@ import threading
 import time
 import logging
 import utils.band_splitter as band_splitter
+import win32file
 
 
 class MultiDriveCopyUtility:
@@ -136,7 +137,6 @@ class MultiDriveCopyUtility:
         return drives
 
     def get_windows_removable_drives(self):
-        import win32file
         drives = []
         for drive in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ':
             drive_name = f'{drive}:'
@@ -144,11 +144,21 @@ class MultiDriveCopyUtility:
             if drive_type == win32file.DRIVE_REMOVABLE:
                 drives.append(drive_name)
         return drives
-
+    
     def browse_destination(self):
         folder_selected = filedialog.askdirectory()
         if folder_selected:
-            self.dest_folder_var.set(folder_selected)
+            counter = 1
+            new_folder_name = f"Mission_{counter}"
+            new_folder_path = os.path.join(folder_selected, new_folder_name)
+            
+            while os.path.exists(new_folder_path):
+                counter += 1
+                new_folder_name = f"Mission_{counter}"
+                new_folder_path = os.path.join(folder_selected, new_folder_name)
+            
+            os.makedirs(new_folder_path)
+            self.dest_folder_var.set(new_folder_path)
             self.add_to_folder_history(folder_selected)
 
     def add_to_folder_history(self, folder):
@@ -404,10 +414,12 @@ class MultiDriveCopyUtility:
 
         tk.Button(stats_window, text="Empty Selected Drives", command=empty_selected_drives).pack(pady=20)
 
+    
     def empty_drive(self, drive_path):
         for root, dirs, files in os.walk(drive_path, topdown=False):
             for file in files:
-                os.remove(os.path.join(root, file))
+                if not file.startswith("CONFIG"):
+                    os.remove(os.path.join(root, file))
             for dir in dirs:
                 os.rmdir(os.path.join(root, dir))
 

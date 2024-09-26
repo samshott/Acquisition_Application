@@ -39,3 +39,20 @@
 2024-09-24 15:46:11,455 - INFO - Drive /Volumes/1tb size: 368.53 GB
 2024-09-24 15:46:12,034 - INFO - Drive /Volumes/UUI size: 2.23 GB
 2024-09-24 15:46:12,035 - INFO - Total size to copy: 370.75 GB
+2024-09-26 14:39:45,881 - INFO - Drive D: size: 13.18 GB
+2024-09-26 14:39:47,023 - INFO - Drive F: size: 2.49 GB
+2024-09-26 14:39:47,023 - INFO - Total size to copy: 15.67 GB
+2024-09-26 14:45:34,290 - INFO - Completed copying LiDAR. Stats: {'total_files': 68, 'copied_files': 68, 'total_size': 14153650282, 'copied_size': 14153650282}
+2024-09-26 14:50:43,667 - INFO - Completed copying Altum. Stats: {'total_files': 3945, 'copied_files': 3945, 'total_size': 2671491116, 'copied_size': 2671491116}
+2024-09-26 14:50:43,667 - INFO - Copy process completed. Total copied: 15.67 GB
+2024-09-26 14:50:43,667 - ERROR - Error during band splitting: main() takes 0 positional arguments but 1 was given
+2024-09-26 14:53:53,906 - INFO - Drive D: () size: 0.00 B
+2024-09-26 14:53:53,906 - INFO - Drive F: (UUI) size: 0.00 B
+2024-09-26 14:53:53,906 - INFO - Total size to copy: 0.00 B
+2024-09-26 14:53:53,906 - INFO - Completed copying LiDAR. Stats: {'total_files': 0, 'copied_files': 0, 'total_size': 0, 'copied_size': 0}
+2024-09-26 14:53:53,921 - INFO - Completed copying Altum. Stats: {'total_files': 0, 'copied_files': 0, 'total_size': 0, 'copied_size': 0}
+2024-09-26 14:53:53,921 - INFO - Copy process completed. Total copied: 0.00 B
+2024-09-26 14:53:53,936 - ERROR - Error during band splitting: main() takes 0 positional arguments but 1 was given
+2024-09-26 15:00:46,790 - INFO - Drive D: size: 13.18 GB
+2024-09-26 15:00:47,448 - INFO - Drive F: size: 2.49 GB
+2024-09-26 15:00:47,448 - INFO - Total size to copy: 15.67 GB
