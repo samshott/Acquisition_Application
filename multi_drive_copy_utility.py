@@ -100,6 +100,7 @@ class MultiDriveCopyUtility:
         self.update_drive_list()
         
         self.altum_var.trace("w", self.toggle_split_bands_checkbox)
+        self.toggle_split_bands_checkbox()  # Initialize checkbox state
     
     def toggle_split_bands_checkbox(self, *args):
         if self.altum_var.get():
